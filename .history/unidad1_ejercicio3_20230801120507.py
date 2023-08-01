@@ -4,13 +4,10 @@
 # on the radius entered by
 # the user. It uses the math module to access the value of pi and
 # perform mathematical calculations.
-# The code prompts the user to enter the radius, calculates the perimeter
-# using the formula 2 * π *
-# radius, and prints the result. Then, it calculates the area using
-# the formula π * radius^2 and
+# The code prompts the user to enter the radius, calculates the perimeter using the formula 2 * π *
+# radius, and prints the result. Then, it calculates the area using the formula π * radius^2 and
 # prints the result.
 
-# Import the math module
 import math
 
 # Prompt the user to enter the radius of the circumference

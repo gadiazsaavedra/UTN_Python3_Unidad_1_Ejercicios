@@ -25,7 +25,7 @@ import math
 while True:
     radius_input = input("Enter the radius of the circle: ")
     try:
-        radius = float(radius_input)
+        radius = float(radius_str)
         if radius > 0:
             break
         else:
@@ -37,4 +37,4 @@ while True:
 area = math.pi * radius**2
 
 # Display the result
-print(f"The area of a circle with radius {radius:.2f} is {area:.2f}")
+print(f"The area is {area:.2f}")

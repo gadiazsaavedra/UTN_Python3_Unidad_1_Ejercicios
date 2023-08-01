@@ -21,5 +21,5 @@ for argument in sys.argv[1:]:
         print(f"{argument} is not a valid integer")
 
 # Print the even numbers
-for NUMBER in even_numbers:
-    print(f"{NUMBER} is an even number")
+for number in even_numbers:
+    print(f"{number} is an even number")

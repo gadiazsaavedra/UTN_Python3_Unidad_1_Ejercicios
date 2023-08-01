@@ -37,4 +37,4 @@ while True:
 area = math.pi * radius**2
 
 # Display the result
-print(f"The area of a circle with radius {radius:.2f} is {area:.2f}")
+print(f"The area is {area:.2f}")

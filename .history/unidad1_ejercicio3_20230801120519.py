@@ -10,7 +10,6 @@
 # the formula π * radius^2 and
 # prints the result.
 
-# Import the math module
 import math
 
 # Prompt the user to enter the radius of the circumference

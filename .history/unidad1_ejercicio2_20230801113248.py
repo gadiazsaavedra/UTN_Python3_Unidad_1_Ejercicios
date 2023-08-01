@@ -1,6 +1,7 @@
 """Incorporar el modulo sys e introduccion de parametros
 luego indicar cuales son multiplos de 2"""
 
+
 # The code is importing the `sys` module, which provides access to some
 # variables used or maintained
 # by the interpreter and to functions that interact with the interpreter.
@@ -12,14 +13,19 @@ import sys
 
 # Filter the even numbers
 even_numbers = []
-for argument in sys.argv[1:]:
+for arg in sys.argv[1:]:
     try:
-        NUMBER = int(argument)
-        if NUMBER % 2 == 0:
-            even_numbers.append(NUMBER)
+        NUM = int(arg)
+        try:
+            NUM = int(arg)
+            if NUM % 2 == 0:
+                even_numbers.append(NUM)
+        except ValueError:
+            print(f"{arg} is not a valid integer")
+            even_numbers.append(NUM)
     except ValueError:
-        print(f"{argument} is not a valid integer")
+        print(f"{arg} is not a valid integer")
 
 # Print the even numbers
-for NUMBER in even_numbers:
-    print(f"{NUMBER} is an even number")
+for _ in even_numbers:
+    print(f"{NUM} is an even number")

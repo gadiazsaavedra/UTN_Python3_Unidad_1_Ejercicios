@@ -21,12 +21,12 @@ Functionality:
 # in the variable `valor_incrementado`.
 # Finally, it prints the result using an f-string.
 
-# Se solicita el ingreso de un valor numérico
-valor = input("Ingresar un valor numérico: ")
-
 try:
+    # Se solicita el ingreso de un valor numérico
+    valor = float(input("Ingresar un valor numérico: "))
+
     # Se calcula el incremento del 10% del valor ingresado
-    valor_incrementado = float(valor) * 1.1
+    valor_incrementado = valor + (valor * 0.1)
 
     # Se redondea el resultado a dos decimales
     valor_incrementado = round(valor_incrementado, 2)

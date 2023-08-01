@@ -12,14 +12,14 @@ import sys
 
 # Filter the even numbers
 even_numbers = []
-for argument in sys.argv[1:]:
+for arg in sys.argv[1:]:
     try:
-        NUMBER = int(argument)
-        if NUMBER % 2 == 0:
-            even_numbers.append(NUMBER)
+        NUM = int(arg)
+        if num % 2 == 0:
+            even_numbers.append(NUM)
     except ValueError:
-        print(f"{argument} is not a valid integer")
+        print(f"{arg} is not a valid integer")
 
 # Print the even numbers
-for NUMBER in even_numbers:
-    print(f"{NUMBER} is an even number")
+for NUM in even_numbers:
+    print(f"{NUM} is an even number")
